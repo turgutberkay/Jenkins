@@ -7,7 +7,7 @@ import org.testng.annotations.DataProvider;
 public class parallelRunner {
     @CucumberOptions(
             features = {"src/test/java/features"},
-            tags = "@UserAcceptance",
+            tags = "@LoginPage",
             glue = {"stepDefinations", "util"},
             plugin = {
                     "summary", "pretty", "html:Reports/CucumberReport/Reports.html",
