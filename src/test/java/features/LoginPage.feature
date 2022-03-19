@@ -1,4 +1,4 @@
-@UserAcceptance
+@Regression
 @LoginPage
 Feature: LoginPage Feature
 
