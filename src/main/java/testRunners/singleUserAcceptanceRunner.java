@@ -7,6 +7,7 @@ import org.testng.annotations.DataProvider;
 
 @CucumberOptions(
         features = {"src/test/java/features"},
+        tags = "@UserAcceptance",
         glue = {"stepDefinations","util"},
         plugin = {
                 "summary", "pretty", "html:Reports/CucumberReport/Reports.html",
@@ -15,7 +16,7 @@ import org.testng.annotations.DataProvider;
         },
         monochrome = true
 )
-public class singleRunner extends AbstractTestNGCucumberTests {
+public class singleUserAcceptanceRunner extends AbstractTestNGCucumberTests {
     @Override
     @DataProvider()
     public Object[][] scenarios() {
