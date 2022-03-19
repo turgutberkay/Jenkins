@@ -5,12 +5,14 @@ pipeline {
             steps {
                 echo 'This is Regression Tests'
                 git credentialsId: '6e7021dc-5f16-47b5-8524-cf87c02f7839', url: 'https://github.com/turgutberkay/Jenkins.git'
+                sh 'mvn clean test'
             }
         }
         stage('UserAcceptance') {
             steps {
                 echo 'This is Regression Tests'
                 git credentialsId: '6e7021dc-5f16-47b5-8524-cf87c02f7839', url: 'https://github.com/turgutberkay/Jenkins.git'
+                sh 'mvn clean test'
             }
         }
     }
